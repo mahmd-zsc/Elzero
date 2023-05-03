@@ -1,7 +1,5 @@
 // -----------------------------make arrow function-----------------------
-window.onscroll = function(){
-  console.log(window.screenY);
-}
+
 // -----------------------------change place of rate-----------------------
 
 let skills = document.querySelector(".skills");
@@ -12,4 +10,21 @@ window.onscroll = function () {
       span.style.width = span.dataset.width;
     });
   }
+};
+let arrow = document.querySelector(".arrow");
+console.log(arrow);
+window.onscroll = function () {
+  if (window.scrollY >= 500) {
+    arrow.style.display = "block";
+  } else {
+    arrow.style.display = "none";
+  }
+};
+
+arrow.onclick = function () {
+  window.scrollTo({
+    left: 0,
+    top: 0,
+    behavior: "smooth",
+  });
 };

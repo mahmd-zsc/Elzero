@@ -109,14 +109,14 @@ a {
   }
 }
 .arrow{
-  position: fixed;
+   position: fixed;
   z-index: 10;
   width: 30px;
   bottom: 20px;
-  right: -50px;
+  right: 30px;
   cursor: pointer;
   border-radius: 20%;
-  opacity: -1;
+  display: none;
 }
 .show{
   right: 50px;
